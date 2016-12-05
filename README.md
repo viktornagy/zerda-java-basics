@@ -1,4 +1,4 @@
-# EXAM: Java Basics
+﻿# EXAM: Java Basics
 
 ### Getting Started
  - Fork this repository under your own account
@@ -101,20 +101,39 @@ class TestApple {
     assertEquals(5, Apple.max_of_three(3, 4, 5));
   }
 }
+
+Fix the situation!:
+
+public int max_of_three(int a, int b, int c) {
+    if (a > b) {
+      return a;
+    }
+    else {
+    return c;
+    }
+}
+
+
+
 ```
 
 Are the tests passing? Detail your answer! [2p] Fix the situation! [2p]
 
 #### Explain what you did, and answer the questions here:
-
+Igen átmegy mind a kettő a teszten, az első „add” függvénynél a bemenettől függetlenül 5-öt ad vissza és az egyenlő 5-el, a második „max_of_three”-nél a függvény harmadik bemeneti változóját adja vissza ami 5 és az egyenlő 5-el.
+ 
 
 ## 4. Question time! (~20 mins) [6p]
 
 ### Where the abstract class is useful? [2p]
 #### Your answer:
+Meg lehet velük alapozni a program vázát és definiálni fő metódusokat, amit persze a származtatott alosztályokban felül lehet definiálni és új metódusokat is hozzá lehet adni.
 
 ### Describe a method! Show the necessary parts and how are them called! [2p]
 #### Your answer:
+int addTwoNumbers(int a, int b){     }
+Először a függvény kimenetének típusát definiáljuk, ha nincs kimenet akkor „void”, utána következik a függvény neve majd utána a bemeneti változók típusokkal együtt, ha nincs bemenet akkor üresen kell hagyni, majd a függvény „teste” amiben a konkrét utasítások, ciklusok, stb. vannak
 
 ### What is the constructor? When it is used? [2p]
 #### Your answer:
+Egy osztályon belül elsőként adjuk meg és azt határozza meg, hogy az osztály példányosításánál milyen tulajdonságokkal és milyen paraméterekkel jöjjön létre az objektum.
